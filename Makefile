@@ -10,5 +10,5 @@ publish:
 lint:
 	npx eslint .
 
-fix:
+lint-fix:
 	npx eslint . --fix
