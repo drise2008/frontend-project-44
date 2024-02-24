@@ -1,10 +1,10 @@
 import generateNumber from '../generate.js';
 import playGame from '../index.js';
 
-const rule = "What is the result of the expression?";
+const rule = 'What is the result of the expression?';
 
 const getOperation = () => {
-  const operations = ["+", "*", "-"];
+  const operations = ['+', '*', '-'];
   const operationIndex = generateNumber(0, operations.length - 1);
 
   return operations[operationIndex];
@@ -12,14 +12,14 @@ const getOperation = () => {
 
 const calc = (operation, firstNumber, secondNumber) => {
   switch (operation) {
-    case "+":
+    case '+':
       return firstNumber + secondNumber;
-    case "*":
+    case '*':
       return firstNumber * secondNumber;
-    case "-":
+    case '-':
       return firstNumber - secondNumber;
     default:
-      throw new Error("incorrect operation");
+      throw new Error('incorrect operation');
   }
 };
 
