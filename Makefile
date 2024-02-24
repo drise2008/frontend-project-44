@@ -17,7 +17,7 @@ brain-progression:
 	node bin/brain-progression.js
 
 brain-gcd:
-	node bin/brain-greaterCommonDivison.js
+	node bin/brain-gcd.js
 
 publish:
 	npm publish --dry-run
